@@ -74,6 +74,8 @@ class User(Base):
     email = Column(String(255), nullable=False, unique=True)
     name = Column(String(255), nullable=True)
 
+    password_hash = Column(String(255), nullable=True)
+
     created_at = Column(
         DateTime,
         nullable=False,

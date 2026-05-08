@@ -12,6 +12,8 @@ from app.routes.tags import router as tags_router
 
 from app.routes.collections import router as collections_router
 
+from app.routes.auth import router as auth_router
+
 app = FastAPI(title="Link Archive API")
 
 
@@ -36,6 +38,7 @@ def health_check():
 
 
 app.include_router(users_router)
+app.include_router(auth_router)
 app.include_router(saved_links_router)
 app.include_router(crawl_jobs_router)
 app.include_router(tags_router)
