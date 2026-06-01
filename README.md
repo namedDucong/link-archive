@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/28459867/README.md)
 # Link Archive
 
 개인 링크 아카이빙 및 검색/관리 시스템입니다.  
